@@ -55,3 +55,5 @@ void uart_puts(volatile uart8250_t *uart, char const* str){
         uart_putc(uart, *str++);
     }
 }
+
+int noprintf (const char * format, ...) { return 0; }
